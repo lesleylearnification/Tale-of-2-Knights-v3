@@ -1,0 +1,9 @@
+Asset Fix: Embedded Image Integration
+
+Problem fixed:
+The SVG wrapper files referenced external PNG files from inside the SVG. GitHub Pages rendered the SVG frames but did not reliably load the nested PNG images, leaving the hero, location artwork, and portraits blank.
+
+Correction:
+Each SVG now contains its corresponding PNG as an embedded base64 data URI. The browser no longer needs to resolve a second file from inside the SVG.
+
+game.js was not modified.

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090806" />
+  <title>A Tale of Two Knights | Trial of Direction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=FULL-SPRINT-1" />
+</head>
+<body>
+  <a class="skip-link" href="#stage">Skip to game</a>
+  <div id="app" class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">✣</div>
+      <div class="brand">
+        <span class="brand-title">A Tale of Two Knights</span>
+        <strong>An Interactive Leadership Journey</strong>
+      </div>
+      <nav class="world-nav" aria-label="World sections">
+        <button id="journalBtn" type="button"><span>▤</span>Journal</button>
+        <span><b>✥</b>Camelot</span>
+        <span><b>♨</b>Campfire</span>
+        <span><b>✦</b>Legacy</span>
+      </nav>
+      <div class="episode-title"><small>Episode I</small><strong>Trial of Direction</strong></div>
+      <button id="settingsBtn" class="seal-button" type="button" aria-label="Open accessibility and research settings" aria-expanded="false">⚙</button>
+    </header>
+
+    <main id="stage" class="stage" aria-live="polite" tabindex="-1"></main>
+
+    <footer class="nav-rail" aria-label="Scene navigation">
+      <button id="backBtn" class="nav-button back-button" type="button">← Back</button>
+      <div class="episode-progress"><span>Episode I of V</span><div class="pips" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div><p id="sceneHint" class="scene-hint">Your story begins.</p></div>
+      <button id="continueBtn" class="nav-button continue-button" type="button">Begin →</button>
+    </footer>
+  </div>
+
+  <aside id="journalPanel" class="journal-panel" aria-hidden="true" aria-label="Campaign journal">
+    <div class="journal-header"><div><span class="eyebrow">Campaign Journal</span><h2>Your apprenticeship</h2></div><button id="closeJournalBtn" class="icon-button" aria-label="Close journal">×</button></div>
+    <nav class="journal-tabs" aria-label="Journal sections"><button class="tab active" data-tab="quest">Quest</button><button class="tab" data-tab="people">People</button><button class="tab" data-tab="evidence">Clues</button><button class="tab" data-tab="code">Oath</button><button class="tab" data-tab="memory">Memory</button></nav>
+    <div id="journalContent" class="journal-content"></div>
+  </aside>
+  <section id="settingsPanel" class="settings-panel" aria-hidden="true" aria-label="Accessibility and research settings">
+    <div class="settings-header"><div><span class="eyebrow">Settings</span><h2>Shape the experience</h2></div><button id="closeSettingsBtn" class="icon-button" aria-label="Close settings">×</button></div>
+    <label class="setting-row"><input id="largeText" type="checkbox"><span><strong>Larger text</strong><small>Increase body and control text.</small></span></label>
+    <label class="setting-row"><input id="dyslexiaMode" type="checkbox"><span><strong>Dyslexia-friendly type</strong><small>Use a clean sans-serif reading font.</small></span></label>
+    <label class="setting-row"><input id="audioMode" type="checkbox" checked><span><strong>Interface sounds</strong><small>Page, quill, and seal sounds.</small></span></label>
+    <label class="setting-row"><input id="motionMode" type="checkbox"><span><strong>Reduce motion</strong><small>Minimize page and hover animation.</small></span></label>
+    <label class="setting-row"><input id="researchMode" type="checkbox"><span><strong>Research mode</strong><small>Reveal assessment data and design notes.</small></span></label>
+  </section>
+  <div id="scrim" class="scrim" hidden></div>
+  <div id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+  <script src="visual-assets.js?v=19.0.0"></script>
+  <script src="game.js?v=15.0.0"></script>
+</body>
+</html>

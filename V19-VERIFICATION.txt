@@ -1,0 +1,8 @@
+V19 SELF-CONTAINED VISUAL ASSET FIX
+
+game.js SHA-256: 734c871cb011b3175db4db4707c503d2190df20f397965619d32c3ca06653f20
+visual-assets.js size: 2224909 bytes
+Embedded assets: ref-title, garrick, elowen, pip, aldren, rowan, cedric, keep-panorama, yard, library, garden, forge, stables, chapel, campfire, garrick-cedric, investiture, journal-memory, hero
+Verification: index.html loads visual-assets.js before game.js.
+Verification: all referenced source PNG files exist and were decoded by Pillow.
+Verification: location-card CSS uses PNG fallback paths and embedded data-URI overrides.

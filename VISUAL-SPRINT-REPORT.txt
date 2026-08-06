@@ -1,0 +1,21 @@
+A TALE OF TWO KNIGHTS — FULL VISUAL PRODUCTION SPRINT 1.0
+
+SOURCE OF TRUTH
+- Built from the latest user-uploaded Tale-of-2-Knights-v3 repository.
+
+PROTECTED FILE
+- game.js was not modified.
+- SHA-256 verification passed after the visual production work.
+
+UPDATED
+- index.html: stylesheet cache version only.
+- style.css: global manuscript UI production layer, responsive styling, component polish.
+- assets: complete replacement artwork set for keep, six locations, narrative scenes, journal, and codex portraits.
+
+VERIFICATION
+- All asset paths referenced by index.html, style.css, and game.js resolve inside the package.
+- No missing local asset references were detected.
+- The package contains one complete GitHub repository, not a patch.
+
+UPLOAD
+Upload the CONTENTS of this folder to the root of the GitHub repository and replace matching files.

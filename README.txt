@@ -1,0 +1,1 @@
+Batch 2 replaces the artwork presentation and all SVG art assets without changing the game flow, assessment, navigation, or content.
